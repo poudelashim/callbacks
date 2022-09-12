@@ -15,3 +15,17 @@ const transformer = function (str, fn) {
 };
 transformer("JavaScript is fun!", upperFirstWord);
 transformer("JavaScript is fun!", oneWord);
+
+//JS uses callbacks all the time
+
+/* Why are callbacks helpful ?
+-> makes it easy to slpit the code into more reuseable and interconnected parts. 
+->callback funtions allows to create abstractions.
+
+*/
+const high5 = function () {
+  console.log("✋");
+};
+// document.addEventListener("click", high5);
+
+["Ashim", "Ashma", "Love"].forEach(high5);
